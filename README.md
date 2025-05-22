@@ -14,4 +14,4 @@ Ketika telah mengubah port pada server dan client menjadi port 8080. Agar progra
 
 ## Small Changes - add some information to client 
 Kali ini, saya mencoba untuk membuat perubahan kecil, yaitu menampilkan pengirim pesan dari client mana dengan mengubah `bcast_tx.send(text.into())?;` menjadi `bcast_tx.send(format!("{addr} : {text}"))?;` pada `server.rs`. Selain itu, saya juga mengubah potongan kode pada `client.rs`, yaitu `println!("Madeline's Computer - From server: {}", text);`.
-![alt text](image-4.png)
+![alt text](img/image-4.png)
